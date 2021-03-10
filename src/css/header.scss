@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 1500px;
+    height: auto;
     position: relative;
 }
 
@@ -11,7 +11,7 @@
     right: 0;
     bottom: 0;
     background: $white url(../img/bg-header.png) no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right top;
     opacity: 0.3;
     z-index: 5;
@@ -223,9 +223,16 @@
 
 .header__main {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 130px;
     height: 800px;
     background: url("../img/bg-girl.png") left center no-repeat;
+}
+
+.header__wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 170px;
 }
 
 .header__main-title {
@@ -235,4 +242,96 @@
     line-height: 100%;
     color: $dark-pink;
     width: 210px;
+    position: relative;
+    z-index: 5;
 }
+
+.header__main-center {
+    width: 380px;
+    height: auto;
+    position: relative;
+    img {
+        position: absolute;
+    }
+}
+
+.boot__flag {
+    top: 20px;
+}
+
+.boot__main1 {
+    top: 250px;
+    left: -140px;
+    z-index: 5;
+}
+
+.boot__main2 {
+   top: 80px;
+   left: -20px;
+}
+
+.header__main-advantage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main__advantage {
+    width: 380px;
+    height: 140px;
+    position: relative;
+    background-color: rgba(175, 20, 88, 0.1);
+    border-radius: 5px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 29px 34px 71px;
+}
+
+.main__advantage-background {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 380px;
+    height: 140px;
+    background-color: rgba(175, 20, 88, 0.1);
+    border-radius: 5px;
+}
+
+.main__advantage-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.main__advantage-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: -50px;
+}
+
+.header__main-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+}
+
+.order__btn-sub {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin-top: 14px;
+}
+
