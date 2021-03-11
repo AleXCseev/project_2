@@ -8,6 +8,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-weight: normal;
 	font-size: 16px;
+	color: $black;
 }
 
 .wrapper {
@@ -25,4 +26,9 @@ body {
 
 main {
 	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1150px;
 }

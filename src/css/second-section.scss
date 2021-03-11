@@ -1,0 +1,65 @@
+.second-section {
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.card__1 {
+	margin-top: 160px;
+}
+
+.card__left {
+	width: 360px;
+	height: 540px;
+	box-shadow: 0px 4px 4px rgba(155, 36, 88, 0.25);
+	border-radius: 10px 0px 0px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 48px 30px;
+	background-color: $card-bg;
+}
+
+.card__center {
+	width: 430px;
+	background: url("../img/card-bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: -40px -20px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+
+.center__img {
+	position: absolute;
+	top: -60px;
+	left: -50px;
+	z-index: 6;
+}
+
+.card__center-title {
+	font-family: "Phoenix Squad";
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 100%;
+	text-align: center;
+	color: $card-title;
+	width: 250px;
+}
+
+.card__right {
+	width: 360px;
+	height: 540px;
+	box-shadow: 0px 4px 4px rgba(155, 36, 88, 0.25);
+	border-radius: 0px 10px 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 48px 30px;
+	background-color: $card-bg;
+}
