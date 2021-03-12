@@ -53,7 +53,7 @@
 					<div class="header__price">
 						<span class="old__price">1000 грн</span>
 						<span class="new__price">1000 грн</span>
-						<a href="" class="order__btn">Заказать
+						<a href="#card" class="order__btn">Заказать
 							<div class="order__img">
 								<img src="./build/img/tringle.png" alt="треугольник">
 							</div>
@@ -86,7 +86,7 @@
 								<img src="./build/img/tech3.png" alt="обувь" class="main__advantage-img">
 							</div>
 							<div class="header__main-order">
-								<a href="" class="order__btn">Заказать
+								<a href="#card" class="order__btn">Заказать
 									<div class="order__img">
 										<img src="./build/img/tringle.png" alt="треугольник">
 									</div>
@@ -100,38 +100,38 @@
 					<p class="slider__text slider__text-left">Лови трендовую новинку 2020 года</p>
 					<p class="slider__text slider__text-right">Лови трендовую новинку 2020 года</p>
 					<div class="slider__container">
-						<div class="slider">
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/1.jpg">
+						<ul class="slider">
+							<li class="slide slide__1">
+								<a data-fancybox="slider" href="./build/img/slider/1.jpg">
 									<div class="slide__img slide__img1"></div>
 								</a>
-							</div>
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/2.jpg">
+							</li>
+							<li class="slide slide__2">
+								<a data-fancybox="slider" href="./build/img/slider/2.jpg">
 									<div class="slide__img slide__img2"></div>
 								</a>
-							</div>
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/3.jpg">
+							</li>
+							<li class="slide slide__3">
+								<a data-fancybox="slider" href="./build/img/slider/3.jpg">
 									<div class="slide__img slide__img3"></div>
 								</a>
-							</div>
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/4.jpg">
+							</li>
+							<li class="slide slide__4">
+								<a data-fancybox="slider" href="./build/img/slider/4.jpg">
 									<div class="slide__img slide__img4"></div>
 								</a>
-							</div>
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/5.jpg">
+							</li>
+							<li class="slide slide__5">
+								<a data-fancybox="slider" href="./build/img/slider/5.jpg">
 									<div class="slide__img slide__img5"></div>
 								</a>
-							</div>
-							<div class="slide">
-								<a data-fancybox="gallery" href="./build/img/slider/6.jpg">
+							</li>
+							<li class="slide slide__6">
+								<a data-fancybox="slider" href="./build/img/slider/6.jpg">
 									<div class="slide__img slide__img6"></div>
 								</a>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 					<button class="slider__btn btn__prev">&larr;</button>
 					<button class="slider__btn btn__next">&rarr;</button>
@@ -153,7 +153,7 @@
 						<div class="video__price">
 							<span class="old__price">1000 грн</span>
 							<span class="new__price">1000 грн</span>
-							<a href="" class="order__btn">Заказать
+							<a href="#card" class="order__btn">Заказать
 								<div class="order__img">
 									<img src="./build/img/tringle.png" alt="треугольник">
 								</div>
@@ -192,19 +192,19 @@
 								<form>
 									<input type="text" class="sprey__input" placeholder="Имя" required>
 									<input type="tel" class="sprey__input" placeholder="Телефон" required>
+									<div class="sprey__color">
+										<span class="color">Цвет:</span>
+										<button class="color__btn btn__white active"></button>
+										<button class="color__btn btn__blue"></button>
+									</div>
+									<div class="sprey__order">
+										<button type="submit" class="order__btn">Заказать
+											<div class="order__img">
+												<img src="./build/img/tringle.png" alt="треугольник">
+											</div>
+										</button>
+									</div>
 								</form>
-								<div class="sprey__color">
-									<span class="color">Цвет:</span>
-									<button class="color__btn btn__white active"></button>
-									<button class="color__btn btn__blue"></button>
-								</div>
-								<div class="sprey__order">
-									<a href="" class="order__btn">Заказать
-										<div class="order__img">
-											<img src="./build/img/tringle.png" alt="треугольник">
-										</div>
-									</a>
-								</div>
 							</div>
 						</div>
 						<img src="./build/img/sprey.png" alt="спрей" class="sprey__foto">
@@ -214,40 +214,68 @@
 			</div>
 			<div class="second-section">
 				<div class="container">
-					<div class="card card__1">
+					<div class="card card__1" id="card">
 						<div class="card__left">
+							<div class="sale">
+								<p class="sale__text">SALE</p>
+								<p class="sale__text2">-65%</p>
+							</div>
 							<div class="card__galary">
-								<div class="card__fotos card__foto1"></div>
-								<div class="card__fotos card__foto2"></div>
-								<div class="card__fotos card__foto3"></div>
-								<div class="card__fotos card__foto4"></div>
-								<div class="card__fotos card__foto5"></div>
-								<div class="card__fotos card__foto6"></div>
+								<div class="card__fotos card__foto1">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/1.jpg">
+										<img src="./build/img/galary-1/1.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto2">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/2.jpg">
+										<img src="./build/img/galary-1/2.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto3">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/3.jpg">
+										<img src="./build/img/galary-1/3.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto4">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/4.jpg">
+										<img src="./build/img/galary-1/4.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto5">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/5.jpg">
+										<img src="./build/img/galary-1/5.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto6">
+									<a data-fancybox="gallery1" href="./build/img/galary-1/6.jpg">
+										<img src="./build/img/galary-1/6.jpg">
+									</a>
+								</div>
 							</div>
 							<table class="card__table">
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Сезон:</td>
+									<td>Весна-Лето 2020</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Каблук:</td>
+									<td>ниже 30 мм</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Верх:</td>
+									<td>натуральная кожа</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Подкладка:</td>
+									<td>комбинированная</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Подошва:</td>
+									<td>полиуретан</td>
 								</tr>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>Стиль:</td>
+									<td>casual</td>
 								</tr>
 							</table>
 							<div class="card__price">
@@ -256,15 +284,412 @@
 							</div>
 						</div>
 						<div class="card__center">
+							<div class="center__background"></div>
 							<img src="./build/img/card-1.png" alt="" class="center__img">
 							<h3 class="card__center-title">Ecco Repel <br> 
 								& Ecco Bouileine</h3>
 						</div>
-						<div class="card__right"></div>
+						<div class="card__right">
+							<form>
+								<input type="text" class="sprey__input" placeholder="Имя" required>
+								<input type="tel" class="sprey__input" placeholder="Телефон" required>
+								<div class="card__color">
+									<span class="color">Цвет:</span>
+									<!-- <button class="color__btn btn__black active"></button> -->
+									<button class="color__btn btn__white active"></button>
+								</div>
+								<span class="color">Размер:</span>
+								<div class="card__size">
+									<div class="size__block active">
+										<button class="size__btn">40</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">41</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">42</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">43</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">44</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">45</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+								</div>
+								<div class="sprey__order">
+									<button type="submit" class="order__btn">Заказать
+										<div class="order__img">
+											<img src="./build/img/tringle.png" alt="треугольник">
+										</div>
+									</button>
+								</div>
+								<div class="card__sale">
+									<p class="card__sale-text">*При покупке весенних кед, скидка <br><span>на зимние модели 400 грн</span></p>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="card card__2">
+						<div class="card__left">
+							<div class="sale">
+								<p class="sale__text">SALE</p>
+								<p class="sale__text2">-65%</p>
+							</div>
+							<div class="card__galary">
+								<div class="card__fotos card__foto1">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/1.jpg">
+										<img src="./build/img/galary-2/1.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto2">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/2.jpg">
+										<img src="./build/img/galary-2/2.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto3">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/3.jpg">
+										<img src="./build/img/galary-2/3.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto4">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/4.jpg">
+										<img src="./build/img/galary-2/4.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto5">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/5.jpg">
+										<img src="./build/img/galary-2/5.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto6">
+									<a data-fancybox="gallery2" href="./build/img/galary-2/6.jpg">
+										<img src="./build/img/galary-2/6.jpg">
+									</a>
+								</div>
+							</div>
+							<table class="card__table">
+								<tr>
+									<td>Сезон:</td>
+									<td>Весна-Лето 2020</td>
+								</tr>
+								<tr>
+									<td>Каблук:</td>
+									<td>ниже 30 мм</td>
+								</tr>
+								<tr>
+									<td>Верх:</td>
+									<td>натуральная кожа</td>
+								</tr>
+								<tr>
+									<td>Подкладка:</td>
+									<td>комбинированная</td>
+								</tr>
+								<tr>
+									<td>Подошва:</td>
+									<td>полиуретан</td>
+								</tr>
+								<tr>
+									<td>Стиль:</td>
+									<td>casual</td>
+								</tr>
+							</table>
+							<div class="card__price">
+								<span class="old__price">1000 грн</span>
+								<span class="new__price">1000 грн</span>
+							</div>
+						</div>
+						<div class="card__center">
+							<div class="center__background"></div>
+							<img src="./build/img/card2-white.png" alt="" class="center__img">
+							<h3 class="card__center-title">Ecco Repel <br> 
+								& Ecco Bouileine</h3>
+						</div>
+						<div class="card__right">
+							<form>
+								<input type="text" class="sprey__input" placeholder="Имя" required>
+								<input type="tel" class="sprey__input" placeholder="Телефон" required>
+								<div class="card__color">
+									<span class="color">Цвет:</span>
+									<button class="color__btn btn__black active"></button>
+									<button class="color__btn btn__white"></button>
+								</div>
+								<span class="color">Размер:</span>
+								<div class="card__size">
+									<div class="size__block active">
+										<button class="size__btn">40</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">41</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">42</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">43</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">44</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">45</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+								</div>
+								<div class="sprey__order">
+									<button type="submit" class="order__btn">Заказать
+										<div class="order__img">
+											<img src="./build/img/tringle.png" alt="треугольник">
+										</div>
+									</button>
+								</div>
+								<div class="card__sale">
+									<p class="card__sale-text">*При покупке весенних кед, скидка <br><span>на зимние модели 400 грн</span></p>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="card card__3">
+						<div class="card__left">
+							<div class="sale">
+								<p class="sale__text">SALE</p>
+								<p class="sale__text2">-65%</p>
+							</div>
+							<div class="card__galary">
+								<div class="card__fotos card__foto1">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/1.jpg">
+										<img src="./build/img/galary-3/1.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto2">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/2.jpg">
+										<img src="./build/img/galary-3/2.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto3">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/3.jpg">
+										<img src="./build/img/galary-3/3.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto4">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/4.jpg">
+										<img src="./build/img/galary-3/4.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto5">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/5.jpg">
+										<img src="./build/img/galary-3/5.jpg">
+									</a>
+								</div>
+								<div class="card__fotos card__foto6">
+									<a data-fancybox="gallery3" href="./build/img/galary-3/6.jpg">
+										<img src="./build/img/galary-3/6.jpg">
+									</a>
+								</div>
+							</div>
+							<table class="card__table">
+								<tr>
+									<td>Сезон:</td>
+									<td>Весна-Лето 2020</td>
+								</tr>
+								<tr>
+									<td>Каблук:</td>
+									<td>ниже 30 мм</td>
+								</tr>
+								<tr>
+									<td>Верх:</td>
+									<td>натуральная кожа</td>
+								</tr>
+								<tr>
+									<td>Подкладка:</td>
+									<td>комбинированная</td>
+								</tr>
+								<tr>
+									<td>Подошва:</td>
+									<td>полиуретан</td>
+								</tr>
+								<tr>
+									<td>Стиль:</td>
+									<td>casual</td>
+								</tr>
+							</table>
+							<div class="card__price">
+								<span class="old__price">1000 грн</span>
+								<span class="new__price">1000 грн</span>
+							</div>
+						</div>
+						<div class="card__center">
+							<div class="center__background"></div>
+							<img src="./build/img/card3-black.png" alt="" class="center__img">
+							<h3 class="card__center-title">Ecco Repel <br> 
+								& Ecco Bouileine</h3>
+						</div>
+						<div class="card__right">
+							<form>
+								<input type="text" class="sprey__input" placeholder="Имя" required>
+								<input type="tel" class="sprey__input" placeholder="Телефон" required>
+								<div class="card__color">
+									<span class="color">Цвет:</span>
+									<button class="color__btn btn__black active"></button>
+									<!-- <button class="color__btn btn__white"></button> -->
+								</div>
+								<span class="color">Размер:</span>
+								<div class="card__size">
+									<div class="size__block active">
+										<button class="size__btn">40</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">41</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">42</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">43</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">44</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+									<div class="size__block">
+										<button class="size__btn">45</button>
+										<span class="btn__size">26.5 см</span>
+									</div>
+								</div>
+								<div class="sprey__order">
+									<button type="submit" class="order__btn">Заказать
+										<div class="order__img">
+											<img src="./build/img/tringle.png" alt="треугольник">
+										</div>
+									</button>
+								</div>
+								<div class="card__sale">
+									<p class="card__sale-text">*При покупке весенних кед, скидка <br><span>на зимние модели 400 грн</span></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="reviews">
+				<div class="container">
+					<div class="reviews__container">
+						<div class="messages">
+							<div class="message">
+								<div class="message__background"></div>
+								<div class="message__header">
+									<div class="message__foto"></div>
+									<h4 class="message__name">Ирина Боз</h4>
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__background"></div>
+								<div class="message__header">
+									<div class="message__foto"></div>
+									<h4 class="message__name">Ирина Боз</h4>
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__background"></div>
+								<div class="message__header">
+									<div class="message__foto"></div>
+									<h4 class="message__name">Ирина Боз</h4>
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__background"></div>
+								<div class="message__header">
+									<div class="message__foto"></div>
+									<h4 class="message__name">Ирина Боз</h4>
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+								<div class="message__text">
+									Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
+								</div>
+							</div>
+						</div>
+						<div class="message__control">
+							<button class="message__btn-prev">&larr;</button>
+							<button class="message__btn-next">&rarr;</button>
+						</div>
+						<button class="review__btn">
+							оставить отзыв
+						</button>	
 					</div>
 				</div>
 			</div>
 		</main>
+		<footer>
+			<div class="footer__left"></div>
+			<div class="footer__center">
+				<div class="footer__title">
+					Лови трендовую новинку 2021 года
+				</div>
+				<div class="footer__subtitle">по суперцене!</div>
+				<div class="footer__boot">
+					<img src="./build/img/footer-boot.png" alt="" class="footer__boot-img">
+					<div class="footer__sale">
+						<p class="sale__text">SALE</p>
+						<p class="sale__text2">-65%</p>
+					</div>
+				</div>
+				<div class="footer__price">
+					<span class="old__price">1000 грн</span>
+					<span class="new__price">1000 грн</span>
+					<a href="#card" class="order__btn">Заказать
+						<div class="order__img">
+							<img src="./build/img/tringle.png" alt="треугольник">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer__right"></div>
+			<div class="copyright">
+				<span class="copiright__text">ТОВ "SaleShop" г.Харьков, ул. Шевченка, 32, ЕГРПОУ 39129343</span>
+				<span class="copiright__text">Политика конфиденциальности</span>
+				<span class="copiright__text"> Все права защищены. Copyright 2021 ©</span>
+			</div>
+		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

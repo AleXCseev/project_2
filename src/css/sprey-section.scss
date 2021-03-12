@@ -117,6 +117,10 @@ form {
 	margin-bottom: 10px;
 }
 
+.sprey__input::placeholder {
+	color: $black;
+}
+
 .sprey__color {
 	display: flex;
 	height: auto;

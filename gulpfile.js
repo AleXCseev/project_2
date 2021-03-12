@@ -22,6 +22,7 @@ const styleFiles = [
 	"./src/css/first-section.scss",
 	"./src/css/sprey-section.scss",
 	"./src/css/second-section.scss",
+	"./src/css/reviews.scss",
 	"./src/css/sliders.scss",
 	"./src/css/adaptive.scss",
 ];
