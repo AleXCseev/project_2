@@ -24,6 +24,7 @@ const styleFiles = [
 	"./src/css/second-section.scss",
 	"./src/css/reviews.scss",
 	"./src/css/sliders.scss",
+	"./src/css/modal.scss",
 	"./src/css/adaptive.scss",
 ];
 //Порядок подключения js файлов

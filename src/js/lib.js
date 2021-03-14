@@ -14,5 +14,11 @@ $(function () {
 	$('[data-fancybox="gallery3"]').fancybox({
 		loop: true,
 	});
+
+	$(".review__btn").click(function () {
+		$.fancybox.open($(".modal"), {
+			infobar: false,
+		})
+	})
 })
 
