@@ -26,28 +26,79 @@
 }
 
 .video__left {
-    width: 860px;
-    height: 860px;
-    background: url("../img/video-left.png") no-repeat;
-    background-size: contain;
-    position: relative;
-    z-index: 2;
+    width: 1000px;
 }
 
-.video__boot {
-    position: absolute;
-    width: 240px;
+.video__elipse {
+	width: 643px;
+	height: 643px;
+	background: radial-gradient(50% 50% at 50% 50%, #FF91D3 0%, #AF1458 100%);
+	border-radius: 100%;
+	position: absolute;
+	top: 180px;
+	left: 240px;
+	z-index: 1;
+}
+
+.video__elipse:before {
+	content: "";
+	width: 700px;
+	height: 700px;
+	position: absolute;
+	opacity: 0.3;
+	border: 2px solid #AF1458;
+	top: 50%;
+	left: 50%;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.video__flowers {
+	position: absolute;
+	top: -160px;
+	width: 890px;
+	left: -240px;
+}
+
+.video__girl {
+	position: absolute;
+	width: 400px;
+	top: 0px;
+	left: -20px;
 }
 
 .video__boot1 {
-    top: 240px;
-    left: 450px;
+    width: 390px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+	transform: rotate(-15deg);
 }
 
 .video__boot2 {
-    top: 120px;
-    left: 620px;
+    width: 270px;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    right: -110px;
 }
+
+
+.video__elipse-subtitle {
+	font-family: "Phoenix Squad";
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100%;
+	text-align: center;
+	color: #fff;
+	opacity: 0.7;
+	width: 30px;
+	position: absolute;
+	top: 80px;
+	left: 260px;
+}
+
 
 .video__right {
     position: relative;
