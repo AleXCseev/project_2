@@ -92,6 +92,9 @@ footer {
 	justify-content: space-between;
 	align-items: baseline;
 	padding-bottom: 30px;
+	.price {
+		width: 45%;
+	}
 }
 
 .copyright {

@@ -15,6 +15,10 @@ $(function () {
 		loop: true,
 	});
 
+	$('[data-fancybox="slider__mobile"]').fancybox({
+		loop: true,
+	});
+
 	$(".review__btn").click(function () {
 		$.fancybox.open($(".modal"), {
 			infobar: false,

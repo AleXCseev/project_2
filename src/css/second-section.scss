@@ -191,6 +191,9 @@
 	justify-content: flex-start;
 	align-items: baseline;
 	width: 100%;
+	.price {
+		width: 90%;
+	}
 }
 
 .card__price .old__price {

@@ -45,7 +45,7 @@ gulp.task("styles", () => {
 			//Объединение файлов в один
 			.pipe(concat("style.css"))
 			//Указать stylus() , sass() или less()
-			.pipe(sass())
+			.pipe(sass({ outputStyle: 'expanded' }))
 			//Добавить префиксы
 			.pipe(
 				autoprefixer({

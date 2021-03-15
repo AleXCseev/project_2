@@ -5,10 +5,12 @@
 
 .video {
     width: 100%;
-    height: auto;
+    height: 961px;
     background: url("../img/video-bg.png") no-repeat;
     background-size: contain;
     background-position: 0px -190px;
+	mix-blend-mode: color-dodge;
+	// opacity: 0.7;
     position: relative;
     display: flex;
 }
@@ -16,7 +18,7 @@
 .video__background {
     position: absolute;
     z-index: 1;
-    top: -300px;
+    top: -200px;
     left: 0;
     width: 100%;
     height: 735px;
@@ -72,6 +74,18 @@
     position: relative;
 }
 
+.opacity__title {
+	font-family: "Phoenix Squad";
+	font-weight: normal;
+	font-size: 144px;
+	line-height: 100%;
+	color: $dark-pink;
+	opacity: 0.03;
+	position: absolute;
+	bottom: -100px;
+	left: -102px;
+}
+
 // .video__screen:before {
 //     content: "";
 //     position: absolute;
@@ -87,7 +101,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 60px;
+    margin-top: 90px;
+	.price {
+		width: 50%;
+	}
 }
 
 .quantity {

@@ -24,8 +24,14 @@
 		<header class="header">
 			<div class="header__background"></div>
 			<div class="header__container">
-				<img src="./build/img/header-boot1.png" alt="ботинок" class="boot1">
-				<img src="./build/img/header-boot2.png" alt="ботинок" class="boot2">
+				<div class="header__elipse">
+					<img src="./build/img/flowers.png" alt="ветка" class="header__flowers">
+					<h3 class="header__elipse-title">ecco</h3>
+					<h4 class="header__elipse-subtitle">S O F T 8</h4>
+					<img src="./build/img/header-girl.png" alt="девушка" class="header__girl">
+					<img src="./build/img/header-boot1.png" alt="ботинок" class="boot1">
+					<img src="./build/img/header-boot2.png" alt="ботинок" class="boot2">
+				</div>
 				<img src="./build/img/branch1.png" alt="ветка" class="header__branch branch1">
 				<img src="./build/img/branch2.png" alt="ветка" class="header__branch branch2">
 				<img src="./build/img/header-boot3.png" alt="ботинок" class="boot3">
@@ -53,8 +59,10 @@
 						</div>
 					</div>
 					<div class="header__price">
-						<span class="old__price">1000 грн</span>
-						<span class="new__price">1000 грн</span>
+						<div class="price">
+							<span class="old__price">1000 грн</span>
+							<span class="new__price">1000 грн</span>
+						</div>
 						<a href="#card" class="order__btn">Заказать
 							<div class="order__img">
 								<img src="./build/img/tringle.png" alt="треугольник">
@@ -64,6 +72,8 @@
 				</div>
 
 				<div class="header__main">
+					<div class="background__blend"></div>
+					<div class="background__blend blend-right"></div>
 					<div class="header__wrapper">
 						<h2 class="header__main-title">ECCO SOFT 8</h2>
 						<div class="header__main-center">
@@ -137,11 +147,46 @@
 								</a>
 							</li>
 						</ul>
+						<button class="slider__btn btn__prev">&larr;</button>
+						<button class="slider__btn btn__next">&rarr;</button>
+
+						<div class="slider__mobile">
+							<div class="slick-slide slick-slide__1">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/1.jpg">
+									<div class="slide__img slide__img1"></div>
+								</a>
+							</div>
+							<div class="slick-slide slick-slide__2">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/2.jpg">
+									<div class="slide__img slide__img2"></div>
+								</a>
+							</div>
+							<div class="slick-slide slick-slide__3">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/3.jpg">
+									<div class="slide__img slide__img3"></div>
+								</a>
+							</div>
+							<div class="slick-slide slick-slide__4">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/4.jpg">
+									<div class="slide__img slide__img4"></div>
+								</a>
+							</div>
+							<div class="slick-slide slick-slide__5">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/5.jpg">
+									<div class="slide__img slide__img5"></div>
+								</a>
+							</div>
+							<div class="slick-slide slick-slide__6">
+								<a data-fancybox="slider__mobile" href="./build/img/slider/6.jpg">
+									<div class="slide__img slide__img6"></div>
+								</a>
+							</div>
+						</div> 
+						
 					</div>
-					<button class="slider__btn btn__prev">&larr;</button>
-					<button class="slider__btn btn__next">&rarr;</button>
-					<div class="slider__bg"></div>
+					
 				</div>
+				<div class="slider__bg"></div>
 			</div>
 		</header>
 		<main>
@@ -155,14 +200,18 @@
 					<div class="video__right">
 						<h3 class="video__title">Лови трендовую новинку 2020 года</h3>
 						<div class="video__screen">
-							<iframe width="560" height="374" src="https://www.youtube.com/embed/9vyGu2O7xNQ"
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9vyGu2O7xNQ"
 								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
+								allowfullscreen>
+							</iframe>
+							<h3 class="opacity__title">ECCO SOFT 8</h3>
 						</div>
 						<div class="video__price">
-							<span class="old__price">1000 грн</span>
-							<span class="new__price">1000 грн</span>
+							<div class="price">
+								<span class="old__price">1000 грн</span>
+								<span class="new__price">1000 грн</span>
+							</div>
 							<a href="#card" class="order__btn">Заказать
 								<div class="order__img">
 									<img src="./build/img/tringle.png" alt="треугольник">
@@ -189,8 +238,10 @@
 										и увеличивает срок службы.</p>
 								</div>
 								<div class="sprey__price">
-									<span class="old__price">1000 грн</span>
-									<span class="new__price">1000 грн</span>
+									<div class="price">
+										<span class="old__price">1000 грн</span>
+										<span class="new__price">1000 грн</span>
+									</div>
 								</div>
 							</div>
 							<div class="sprey__form">
@@ -290,8 +341,10 @@
 								</tr>
 							</table>
 							<div class="card__price">
-								<span class="old__price">1000 грн</span>
-								<span class="new__price">1000 грн</span>
+								<div class="price">
+									<span class="old__price">1000 грн</span>
+									<span class="new__price">1000 грн</span>
+								</div>
 							</div>
 						</div>
 						<div class="card__center">
@@ -417,8 +470,10 @@
 								</tr>
 							</table>
 							<div class="card__price">
-								<span class="old__price">1000 грн</span>
-								<span class="new__price">1000 грн</span>
+								<div class="price">
+									<span class="old__price">1000 грн</span>
+									<span class="new__price">1000 грн</span>
+								</div>
 							</div>
 						</div>
 						<div class="card__center">
@@ -544,8 +599,10 @@
 								</tr>
 							</table>
 							<div class="card__price">
-								<span class="old__price">1000 грн</span>
-								<span class="new__price">1000 грн</span>
+								<div class="price">
+									<span class="old__price">1000 грн</span>
+									<span class="new__price">1000 грн</span>
+								</div>
 							</div>
 						</div>
 						<div class="card__center">
@@ -698,8 +755,10 @@
 					</div>
 				</div>
 				<div class="footer__price">
-					<span class="old__price">1000 грн</span>
-					<span class="new__price">1000 грн</span>
+					<div class="price">
+						<span class="old__price">1000 грн</span>
+						<span class="new__price">1000 грн</span>
+					</div>
 					<a href="#card" class="order__btn">Заказать
 						<div class="order__img">
 							<img src="./build/img/tringle.png" alt="треугольник">

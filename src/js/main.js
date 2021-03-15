@@ -10,7 +10,6 @@ $(function () {
 	function switchBtns(selector) {
 		$(selector + " .size__btn").click(function () {
 			$(selector + " .size__btn").each(function () {
-				console.log($(this).parent());
 				$(this).parent().removeClass("active");
 			})
 			$(this).parent().addClass("active");
@@ -60,7 +59,6 @@ $(function () {
 		$(window).scroll(function () {
 			var currentScroll = window.pageYOffset;
 			if (currentScroll >= startOpacity - 700 && currentScroll <= endOpacity - 300) {
-				console.log("1")
 				$(".quantity").removeClass("active");
 			} else {
 				$(".quantity").addClass("active");

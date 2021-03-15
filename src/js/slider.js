@@ -294,8 +294,8 @@ function carousel(selector) {
 
 	$(".btn__next").click(function () {
 		if (acarousel.isAnim()) return false;
-		var move = acarousel.move(-1);
-		changeActive(move);
+		acarousel.move(-1);
+		// changeActive(move);
 		return false;
 	});
 
@@ -328,6 +328,18 @@ carousel(".slider")
 // autoPlay()
 
 $(function () {
+	$('.slider__mobile').slick({
+		dots: false,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+		arrows: true,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		zIndex: 100000,
+		prevArrow: $('.btn__prev'),
+		nextArrow: $('.btn__next'),
+	});
 	// $('.slider').slick({
 	// 	centerMode: true,
 	// 	slidesToShow: 5,

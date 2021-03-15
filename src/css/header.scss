@@ -10,24 +10,37 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: $white url(../img/bg-header.png) no-repeat;
+	background-color: #fff;
+    background: url("../img/bg-header.png") no-repeat;
     background-size: contain;
     background-position: right top;
-    opacity: 0.3;
-    z-index: 5;
+	background-blend-mode: color-dodge;
+    opacity: 0.2;
+    z-index: 2;
 }
 
 .header__container {
     width: 100%;
     height: auto;
-    background: url("../img/header-left.png") left top no-repeat;
-    background-size: 47%;
+    // background: url("../img/header-left.png") left top no-repeat;
+    // background-size: 47%;
     position: relative;
     z-index: 6;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.header__elipse {
+	width: 680px;
+	height: 680px;
+	background: radial-gradient(50% 50% at 50% 50%, #FF91D3 0%, #AF1458 100%);
+	border-radius: 100%;
+	position: absolute;
+	top: -60px;
+	left: 100px;
+	z-index: 1;
 }
 
 .header__boot {
@@ -39,16 +52,16 @@
     width: 250px;
     height: auto;
     position: absolute;
-    top: 190px;
-    left: 80px;
+    top: 230px;
+    left: 120px;
 }
 
 .boot2 {
     width: 240px;
     height: auto;
     position: absolute;
-    top: 0;
-    left: 250px;
+    top: 30px;
+    left: 300px;
 }
 
 .header__branch {
@@ -82,7 +95,7 @@
     align-items: center;
     margin-top: 20px;
     position: relative;
-	z-index: 2;
+	z-index: 10;
 }
 
 .header__title {
@@ -141,6 +154,13 @@
     color: $black;
 }
 
+.price {
+	width: 100%;
+	display: flex; 
+	justify-content: space-between;
+	align-items: baseline;
+}
+
 .header__price {
     width: 100%;
     display: flex;
@@ -149,6 +169,10 @@
 	align-items: baseline;
 	position: relative;
 	z-index: 10;
+
+	.price {
+		width: 50%;
+	}
 }
 
 .old__price {
@@ -230,7 +254,25 @@
     width: 100%;
     margin-top: 130px;
     height: 800px;
+	position: relative;
     background: url("../img/bg-girl.png") left center no-repeat;
+}
+
+.background__blend {
+	position: absolute;
+	width: 660px;
+	height: 660px;
+	background: radial-gradient(50% 50% at 50.01% 50%, #D49CC0 0%, rgba(255, 255, 255, 0) 100%);
+	background-blend-mode: multiply;
+	mix-blend-mode: multiply;
+	opacity: 0.6;
+	// z-index: 1;
+	top: 400px;
+}
+
+.blend-right {
+	top: 100px;
+	right: 200px;
 }
 
 .header__wrapper {
@@ -312,6 +354,8 @@
     line-height: 21px;
     text-transform: uppercase;
     color: $black;
+	position: relative;
+	z-index: 30;
 }
 
 .main__advantage-img {
@@ -320,6 +364,7 @@
     height: 100px;
     top: 20px;
     left: -50px;
+	z-index: 30;
 }
 
 .header__main-order {
