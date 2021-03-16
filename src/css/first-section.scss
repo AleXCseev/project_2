@@ -7,26 +7,21 @@
     width: 100%;
     height: 961px;
     background: url("../img/video-bg.png") no-repeat;
-    background-size: contain;
-    background-position: 0px -190px;
+    background-size: cover;
+    background-position: 0px -220px;
 	mix-blend-mode: color-dodge;
+	background-blend-mode: color-dodge;
 	// opacity: 0.7;
     position: relative;
     display: flex;
-}
-
-.video__background {
-    position: absolute;
-    z-index: 1;
-    top: -200px;
-    left: 0;
-    width: 100%;
-    height: 735px;
-    background: linear-gradient(180deg, #FFE2E5 0%, rgba(255, 226, 229, 0) 100%);
+	z-index: 5;
 }
 
 .video__left {
     width: 1000px;
+	position: relative;
+	z-index: 10;
+	opacity: 1;
 }
 
 .video__elipse {
@@ -37,7 +32,7 @@
 	position: absolute;
 	top: 180px;
 	left: 240px;
-	z-index: 1;
+	z-index: 10;
 }
 
 .video__elipse:before {
@@ -83,7 +78,6 @@
     top: -50px;
     right: -110px;
 }
-
 
 .video__elipse-subtitle {
 	font-family: "Phoenix Squad";

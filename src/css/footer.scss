@@ -10,7 +10,7 @@ footer {
 }
 
 .footer__left {
-	width: 700px;
+	width: 800px;
 	height: 100%;
 	background: url("../img/footer-bg1.png") no-repeat;
 	background-size: contain;
@@ -18,17 +18,26 @@ footer {
 }
 
 .footer__right {
-	width: 600px;
+	width: 700px;
 	height: 100%;
-	background: url("../img/footer-bg2.png") no-repeat;
-	background-size: contain;
-	background-position: right bottom;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.footer__right-img{
+	width: 700px;
+	z-index: 10;
+	margin-left: -80px;
+	margin-bottom: -40px;
 }
 
 .footer__center {
 	position: absolute;
 	width: 580px;
-	height: 580px;
+	height: 620px;
 	bottom: 0;
 	left: 35%;
 	z-index: 20;
@@ -107,6 +116,7 @@ footer {
 	text-align: center;
 	margin: 0 auto;
 	line-height: 40px;
+	z-index: 30;
 }
 
 .copiright__text {
@@ -115,6 +125,22 @@ footer {
 	line-height: 16px;
 	color: #000;
 	margin-left: 10px;
+}
+
+.footer__vertical-title {
+	position: absolute;
+	font-family: "Phoenix Squad";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 100%;
+	text-align: center;
+	color: $card-bg;
+	opacity: 0.7;
+	width: 30px;
+	bottom: 50px;;
+	right: 170px;
+	z-index: 5;
 }
 
 

@@ -74,6 +74,10 @@ gulp.task("fonts", () => {
 	return gulp.src("./src/fonts/**").pipe(gulp.dest("./build/fonts/")).pipe(browserSync.stream());
 });
 
+gulp.task("libs", () => {
+	return gulp.src("./src/libs/**").pipe(gulp.dest("./build/libs/")).pipe(browserSync.stream());
+});
+
 //Таск для обработки скриптов
 gulp.task("scripts", () => {
 	//Шаблон для поиска файлов JS
@@ -127,6 +131,7 @@ gulp.task("watch", () => {
 	});
 	gulp.watch("./src/img/**", gulp.series("img-compress"));
 	gulp.watch("./src/fonts/**", gulp.series("fonts"));
+	gulp.watch("./src/libs/**", gulp.series("libs"));
 	gulp.watch("./src/css/**/*.scss", gulp.series("styles"));
 	gulp.watch("./src/js/**/*.js", gulp.series("scripts"));
 	gulp.watch("./*.html").on("change", browserSync.reload);
@@ -135,5 +140,5 @@ gulp.task("watch", () => {
 //Таск по умолчанию, Запускает del, styles, scripts, img-compress и watch
 gulp.task(
 	"default",
-	gulp.series("del", gulp.parallel("styles", "scripts", "img-compress", "fonts"), "watch"),
+	gulp.series("del", gulp.parallel("styles", "scripts", "img-compress", "fonts", "libs"), "watch"),
 );
