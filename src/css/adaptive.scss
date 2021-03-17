@@ -523,6 +523,36 @@
 	.message__control .message__btn-prev {
 		margin-left: -10px;
 	}
+	footer {
+		height: 600px;
+		background-size: 45%;
+	}
+	.footer__left {
+		width: 500px;
+	}
+	.footer__center {
+		height: 500px;
+	}
+	.footer__right {
+		width: 450px;
+	}
+	.footer__right-img {
+		width: 450px;
+	}
+	.footer__vertical-title {
+		font-size: 70px;
+		right: 30px;
+	}
+	.footer__boot-img {
+		width: 350px;
+	}
+	.footer__title {
+		font-size: 38px;
+		line-height: 40px;
+	}
+	.footer__subtitle {
+		font-size: 28px;
+	}
 }
 
 @media (max-width: 1080px) {
@@ -854,6 +884,49 @@
 	.modal__area {
 		width: 500px;
 	}
+	footer {
+		height: 500px;
+		margin-top: 50px;
+		background-size: 55%;
+		margin-bottom: 80px;
+	}
+	.footer__right {
+		display: none;
+		
+	}
+	.footer__center {
+		position: relative;
+		left: 400px;
+		bottom: 0;
+		width: 500px;
+	}
+	.footer__left {
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+	}
+	.footer__boot {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer__boot-img {
+		margin-left: 40px;
+	}
+	.footer__price {
+		.price {
+			width: 50%;
+		}
+	}
+	.copyright {
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		bottom: -80px;
+		padding: 20px 20px;
+	}
 }
 
 @media (max-width: 880px) {
@@ -1086,6 +1159,25 @@
 		z-index: 30;
 		right: 245px;
 	}
+	footer {
+		margin-top: 100px;
+		background-size: 65%;
+		justify-content: flex-end;
+	}
+	.footer__price {
+		.price {
+			width: 60%;
+		}
+	}
+	.footer__center {
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
+	.footer__left {
+		width: 450px;
+		background-position: -30px bottom;
+	}
 }
 
 @media (max-width: 740px) {
@@ -1240,7 +1332,50 @@
 		bottom: -120px;
 		z-index: 30;
 		right: 220px;
-		// transform: translateX(-50%);
+	}
+	footer {
+		height: 900px;
+		background-size: 80%;
+		background-position: left 120px;
+	}
+	.footer__left {
+		background-position: 50px 140px;
+		background-size: 70%;
+		width: 730px;
+	}
+	.footer__center {
+		width: 600px;
+		margin: 0 40px;
+		height: auto;
+	}
+	.footer__boot {
+		margin-left: 60px;
+	}
+	.footer__boot-img {
+		margin-left: 60px;
+	}
+	.footer__sale {
+		width: 170px;
+		height: 63px;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 10px 10px 10px 60px;
+		.sale__text {
+			width: 60px;
+			font-size: 15px;
+			line-height: 100%;
+		}
+		.sale__text2 {
+			font-size: 22px;
+			line-height: 100%;
+		}
+	}
+	
+	.footer__title {
+		width: 80%;
+	}
+	.footer__subtitle{
+		margin-bottom: 400px;
 	}
 }
 
@@ -1407,6 +1542,17 @@
 	.modal__area {
 		width: 360px;
 	}
+	.footer__boot {
+		width: 400px;
+		margin: 0;
+	}
+	.footer__boot-img {
+		margin-left: 40px;
+	}
+	.footer__sale {
+		right: 0;
+		left: auto;
+	}
 }
 
 @media (max-width: 660px) {
@@ -1480,6 +1626,11 @@
 		bottom: -120px;
 		z-index: 30;
 		right: 140px;
+	}
+	.footer__title {
+		width: 90%;
+		font-size: 30px;
+		line-height: 28px;
 	}
 }
 
@@ -1744,6 +1895,54 @@
 	}
 	.foto {
 		margin-top: 0px;
+	}
+	footer {
+		height: 850px;
+		background-size: 100%;
+		margin-bottom: 92px;
+	}
+	.footer__price {
+		.price {
+			width: 80%;
+		}
+	}
+	.footer__left {
+		background-position: -50px 80px;
+	}
+	.footer__center {
+		margin: 0;
+	}
+	.footer__subtitle {
+		margin-bottom: 375px;
+	}
+	.copyright {
+		height: 92px;
+		padding: 14px 15px;
+		bottom: -92px;
+	}
+	.quantity {
+		bottom: 40px;
+		right: 20px;
+		width: 140px;
+		height: 60px;
+		padding: 8px;
+		padding-right: 20px;
+	}
+	.quantity__goods {
+		width: 100%;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		span {
+			text-align: center;
+		}
+	}
+	.quantity__number {
+		font-size: 30px;
+		line-height: 100%;
+	}
+	.quantity__img {
+		display: none;
 	}
 }
 
@@ -2027,6 +2226,32 @@
 		bottom: -120px;
 		z-index: 30;
 		right: 40px;
+	}
+	footer{
+		height: 720px;
+		margin-top: 150px;
+		background-size: 110%;
+	} 
+	.footer__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.footer__subtitle {
+		font-size: 20px;
+		line-height: 23px;
+		margin-bottom: 280px;
+	}
+	.footer__boot {
+		width: 290px;
+	}
+	.footer__boot-img {
+		width: 280px;
+		left: -50px;
+		top: -20px;
+	}
+	.footer__left {
+		background-size: 55%;
+		background-position: -30px 80px;
 	}
 }
 
